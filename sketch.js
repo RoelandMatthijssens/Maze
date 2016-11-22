@@ -2,7 +2,7 @@ var world;
 var current;
 var unvisitedNeighbors = [];
 function setup() {
-    world = World(50,50,10);
+    world = World(25,25,15);
     createCanvas(world.rows*world.scl, world.cols*world.scl);
     world.populateCells();
     current = world.visitRandomCell();
